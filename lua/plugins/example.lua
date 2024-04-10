@@ -8,8 +8,6 @@ if true then return {} end
 -- * add extra plugins
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
-return {
-  { import = "lazyvim.plugins.extras.lang.json" },
 --  {
 --    "LazyVim/LazyVim",
 --    opts = {
