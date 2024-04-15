@@ -5,3 +5,8 @@ vim.opt.list = true
 vim.wo.number = true
 vim.opt.scrolloff = 10
 vim.opt.cursorline = true
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 700
+vim.opt.termguicolors = true
+
