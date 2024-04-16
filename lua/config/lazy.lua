@@ -24,5 +24,5 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
   },
   install = { colorscheme = { "tokyonight" } },
-  checker = { enabled = true }, -- automatically check for plugin updates
+  checker = { enabled = true, notify = false }, -- automatically check for plugin updates
 })
