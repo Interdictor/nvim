@@ -9,3 +9,10 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 5000
 vim.opt.termguicolors = true
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
