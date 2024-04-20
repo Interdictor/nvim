@@ -24,6 +24,7 @@ vim.keymap.set('n', '<leader>ps', function() tbuiltin.grep_string({ search = vim
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-h>', ':noh<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-w>', ':%s#\\($\\n\\s*\\)\\+\\%$##<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>', { noremap = true })
 
 vim.api.nvim_command('command! -range=% Formatjq <line1>,<line2>!jq .')
 vim.api.nvim_create_user_command("Cppath", function()

@@ -8,4 +8,5 @@ lspconfig.lua_ls.setup {
   }
 }
 
+lspconfig.tsserver.setup {}
 -- lspconfig.ruby_lsp.setup {}
