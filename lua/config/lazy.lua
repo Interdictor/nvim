@@ -6,8 +6,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
+local lazy = require('lazy')
 
-require("lazy").setup({
+lazy.setup({
+
   spec = {
     -- add LazyVim and import its plugins
     -- import any extras modules here
