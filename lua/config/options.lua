@@ -16,3 +16,5 @@ vim.opt.undofile = true
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+
+vim.wo.signcolumn = 'yes'

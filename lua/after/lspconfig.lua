@@ -9,4 +9,5 @@ lspconfig.lua_ls.setup {
 }
 
 lspconfig.tsserver.setup {}
+lspconfig.pyright.setup {}
 -- lspconfig.ruby_lsp.setup {}
