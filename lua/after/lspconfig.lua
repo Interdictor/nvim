@@ -9,5 +9,20 @@ lspconfig.lua_ls.setup {
 }
 
 lspconfig.tsserver.setup {}
-lspconfig.pyright.setup {}
--- lspconfig.ruby_lsp.setup {}
+
+local python_root_files = {
+  'pyproject.toml',
+  'setup.py',
+  'setup.cfg',
+  'requirements.txt',
+  'Pipfile',
+  'pyrightconfig.json',
+}
+
+lspconfig.pyright.setup {
+  default_config = {
+    root_dir = function(fname)
+      return lspconfig.util.root_pattern(table.unpack(python_root_files))(fname)
+    end
+  }
+}

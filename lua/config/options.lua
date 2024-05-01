@@ -20,3 +20,5 @@ vim.opt.incsearch = true
 vim.wo.signcolumn = 'yes'
 vim.opt.lazyredraw = true
 vim.opt.ttyfast = true
+
+vim.opt.autowriteall = true
