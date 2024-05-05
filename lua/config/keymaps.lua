@@ -28,7 +28,9 @@ vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_gre
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-h>', ':noh<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-w>', ':%s#\\($\\n\\s*\\)\\+\\%$##<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>cl', ':LspRestart<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>', { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_command('command! -range=% Formatjq <line1>,<line2>!jq .')
 vim.api.nvim_create_user_command("Cppath", function()

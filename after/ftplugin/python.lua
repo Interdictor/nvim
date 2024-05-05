@@ -4,3 +4,4 @@
 -- vim.opt_local.expandtab = true
 --
 -- vim.g.pyindent_open_paren = 0
+vim.opt_local.colorcolumn = '80'
