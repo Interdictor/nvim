@@ -1,4 +1,4 @@
--- local lspconfig = require('lspconfig')
+local lspconfig = require('lspconfig')
 --
 -- lspconfig.lua_ls.setup {
 --   settings = {
@@ -8,8 +8,8 @@
 --   }
 -- }
 --
--- lspconfig.tsserver.setup {}
---
+lspconfig.tsserver.setup {}
+
 -- local python_root_files = {
 --   'pyproject.toml',
 --   'setup.py',
