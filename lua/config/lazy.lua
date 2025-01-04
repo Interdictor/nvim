@@ -9,7 +9,6 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local lazy = require('lazy')
 
 lazy.setup({
-
   spec = {
     -- add LazyVim and import its plugins
     -- import any extras modules here
@@ -25,6 +24,5 @@ lazy.setup({
     lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { "tokyonight" } },
   checker = { enabled = true, notify = false }, -- automatically check for plugin updates
 })

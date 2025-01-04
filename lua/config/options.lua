@@ -22,3 +22,4 @@ vim.opt.lazyredraw = true
 vim.opt.ttyfast = true
 
 vim.opt.autowriteall = true
+vim.opt.winbar = nil

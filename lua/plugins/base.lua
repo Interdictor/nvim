@@ -1,4 +1,4 @@
 return {
-  { 'sainnhe/vim-color-forest-night' },
-  { 'LazyVim/LazyVim', opts = { colorscheme = 'everforest' } },
+  { 'interdictor/nvim-test-theme' },
+  { 'LazyVim/LazyVim', opts = { colorscheme = 'rose-pine' } },
 }
