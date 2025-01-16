@@ -8,7 +8,11 @@ local lspconfig = require('lspconfig')
 --   }
 -- }
 --
-lspconfig.tsserver.setup {}
+lspconfig.tsserver.setup {
+  on_attach = function(client, bufnr)
+    client.server_capabilities.semanticTokensProvider = nil
+  end,
+}
 
 -- local python_root_files = {
 --   'pyproject.toml',
