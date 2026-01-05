@@ -24,3 +24,4 @@ vim.opt.ttyfast = true
 vim.opt.autowriteall = true
 vim.opt.winbar = nil
 vim.highlight.priorities.semantic_tokens = 120
+vim.opt.wrap = false
